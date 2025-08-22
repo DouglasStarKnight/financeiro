@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Modules\Signature\SignatureController;
+use App\Modules\DashboardCustomer\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
 });
+route::get('/signature', function (){
+    return view('signature');
+});
+
+Route::prefix('dashboard')->as('dashboard.')->controller(DashboardController::class)->group(function(){
+route::get('/', 'findAll')->name('findAll');
+});
+
+Route::prefix('signature')->as('signature.')->controller(SignatureController::class)->group(function(){
+route::get('/', 'findAll')->name('findAll');
+});
+

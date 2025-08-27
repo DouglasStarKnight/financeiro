@@ -4,7 +4,7 @@
     </button>
 
     <div class="p-4">
-      <h4 class="logo-text fw-bold mb-0">Financeiro</h4>
+      <h4 class="logo-text fw-bold mb-0">Resolve Aí</h4>
       <p class="text-light small hide-on-collapse">Dashboard</p>
     </div>
 
@@ -15,16 +15,17 @@
       </a>
       <a href="{{route('signature.findAll')}}" class="sidebar-link text-decoration-none p-3">
         <i class="fas fa-chart-bar me-3"></i>
-        <span class="hide-on-collapse">Assinaturas</span>
+        <span class="hide-on-collapse">Solicitações</span>
       </a>
       <a href="#" class="sidebar-link text-decoration-none p-3">
-        <i class="fas fa-users me-3"></i>
-        <span class="hide-on-collapse">usuarios</span>
+        {{-- <i class="fas fa-users me-3"></i> --}}
+        <i class="fa-solid fa-person-digging me-3"></i>
+        <span class="hide-on-collapse">Locais de obras</span>
       </a>
 
       <a href="#" class="sidebar-link text-decoration-none p-3">
-        <i class="fas fa-box me-3"></i>
-        <span class="hide-on-collapse">Produtos/Serviços</span>
+        <i class="fa-solid fa-hammer me-3"></i>
+        <span class="hide-on-collapse">Futuros Projetos</span>
       </a>
       <a href="#" class="sidebar-link text-decoration-none p-3">
         <i class="fas fa-gear me-3"></i>
@@ -34,7 +35,7 @@
 
     <div class="profile-section mt-auto p-4">
       <div class="d-flex align-items-center">
-        <img src="oriPerfil.jpeg" style="height:60px" class="rounded-circle" alt="Profile">
+        <img src="image/oriPerfil.jpeg" style="height:60px" class="rounded-circle" alt="Profile">
         <div class="ms-3 profile-info">
           <h6 class="text-white mb-0">Douglas Campos</h6>
           <small class="text-light">Admin</small>

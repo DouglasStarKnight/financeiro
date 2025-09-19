@@ -13,7 +13,7 @@
         <i class="fas fa-home me-3"></i>
         <span class="hide-on-collapse">inicio</span>
       </a>
-      <a href="{{route('signature.findAll')}}" class="sidebar-link text-decoration-none p-3">
+      <a href="{{route('request.findAll')}}" class="sidebar-link text-decoration-none p-3">
         <i class="fas fa-chart-bar me-3"></i>
         <span class="hide-on-collapse">Solicitações</span>
       </a>
